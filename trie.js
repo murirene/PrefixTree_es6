@@ -9,13 +9,13 @@
 */
 
 class _Node {
-	constructor(value) {
+	constructor() {
 		this._children = new Map();
 	}
 
 	get children() { return this._children; }
 	set children(child) { 
-		this._children.set(child, new _Node(child)) 
+		this._children.set(child, new _Node()) 
 	} 
 }
 
